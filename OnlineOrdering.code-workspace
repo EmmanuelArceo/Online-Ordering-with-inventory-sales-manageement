@@ -1,13 +1,9 @@
 {
   "folders": [
-	{
-		"name": "OnlineOrdering",
-		"path": "."
-	},
-	{
-		"name": "css1",
-		"path": "../OnlineFood-PHP/css1"
-	}
-],
+    {
+      "name": "OnlineOrdering",
+      "path": "."
+    }
+  ],
   "settings": {}
 }

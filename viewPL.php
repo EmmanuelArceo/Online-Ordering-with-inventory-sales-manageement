@@ -36,12 +36,12 @@ body{
 
 }
 .middle{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-left: 0px;
-            border-radius: 2rem;
-            flex-direction:row;
+    display: grid;
+  justify-content: space-evenly;
+  margin-top: 1vw;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  
+  row-gap: 20px;
             
             
 }

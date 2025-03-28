@@ -30,13 +30,12 @@
 
 }
 .middle{
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            margin-left: 0px;
-            
-            border-radius: 2rem;
-            flex-direction:row;
+    display: grid;
+  justify-content: space-evenly;
+  margin-top: 1vw;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  
+  row-gap: 20px;
 }
 .container {
             max-width: 300px;
@@ -89,7 +88,7 @@
        <p class="mb-0">' .$pizzaDesc .'</p>';
 
 // Fetch addons from the database
-$addonSql = "SELECT * FROM addonns where addcategoryid = $pizzaCategorieId";
+/*$addonSql = "SELECT * FROM addonns where addcategoryid = $pizzaCategorieId";
 $addonResult = mysqli_query($conn, $addonSql);
 
 echo '<div class="mt-3">
@@ -108,7 +107,7 @@ while ($addon = mysqli_fetch_assoc($addonResult)) {
            <input type="number" class="form-control addon-quantity" min="1" value="1" style="width: 60px; display: inline-block; margin-left: 10px;" disabled>
          </div>';
 }
-
+ */
 echo '</form>
    </div>';
 
@@ -151,7 +150,7 @@ else{
                     </a>
                 </div>
             </div>'
-        ?>
+       ?>
         </div>
     </div>
 

@@ -43,7 +43,7 @@ body{
             justify-content: space-around;
             flex-wrap: wrap;
             margin-left: 0px;
-            
+            min-height: 100vh;
             border-radius: 2rem;
             flex-direction:row;
 }
@@ -63,9 +63,7 @@ body{
             margin-bottom: 3%;
         }
 @media screen and (max-width: 500px) {
-  .middle{
-      
-}
+
 
        .container {
 
@@ -97,9 +95,42 @@ body{
   overflow-x: hidden;
   align-items: center;
   justify-content: center;
+  
+
+  
+}.infous span{
+ 
+  padding: 5px;
+
+}
+.allitem{
+  display: grid;
+  justify-content: space-evenly;
+  margin-top: 1vw;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  margin-bottom: 100px;
+  row-gap: 20px;
+}
+.containeritem{
+           
+            max-width: 300px;
+            height:100%;
+            max-height:470px;
+            margin: 0 auto;
+            text-align: center;
+            padding: 20px;
+            font-size: 20px;
+            color: white;
+            background-color: #d3d3d3;
+            border-radius: 10px;
+            box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+            margin-top: 3%;
+            margin-bottom: 3%;
+           
 }
 
-/* From Uiverse.io by MuhammadHasann */ 
+
+
 </style>
   </head>
 <body>
@@ -112,9 +143,10 @@ body{
 
 <section id="infous" class="infous">
 <div class="con  col-md-6 col-sm-10  " data-aos="zoom-out-up">
-  <h1 data-aos="fade-up">Welcome to <br> Soul Tea and Sweet Treats</h1>
-  <p data-aos="fade-left">We are a specialty in providing high-quality, fresh, and locally-sourced food. We strive to provide our customers with the best possible experience while also promoting local businesses and supporting our community.</p>
+  <h1 data-aos="fade-up">Welcome to <br> PetBuddy</h1>
+  <p data-aos="fade-left"></p>
   <a href="#category" class="btn ">
+    <span></span>
 </a>
  
 </div>
@@ -125,9 +157,9 @@ body{
 </section>
   
 
- <section id="category">
-  <div class="container-fluid bg-light" style="margin:auto;border-top: 2px groove black;border-bottom: 2px groove black; ">     
-      <h2 class="text-center">Menu Categories</h2>
+ <section id="category" >
+  <div data-aos="fade-up" class="container-fluid bg-light" style="margin:auto;border-top: 2px groove black;border-bottom: 2px groove black; ">     
+      <h2 class="text-center" ></h2>
     </div>
 <div class="middle">
 <?php 
@@ -151,30 +183,22 @@ body{
 
 </div>
 </section>
+
+<section>
+<div data-aos="fade-up" class="container-fluid bg-light" style="margin:auto;border-top: 2px groove black;border-bottom: 2px groove black; ">     
+      <h2 class="text-center" ></h2>
+    </div>
+<div class="allitem">
+
+</div>
+</section>
 <!--<div class="all_menus">
  
   <div class="" style="margin:auto;border-top: 2px groove black;border-bottom: 2px groove black; ">     
     <h2 class="text-center">All Menu Items</h2>
   </div>
   <div class="middle">
-<?php 
-        $sql = "SELECT * FROM `pizza`"; 
-        $result = mysqli_query($conn, $sql);
-        while($row = mysqli_fetch_assoc($result)){
-          $id = $row['pizzaId'];
-          $cat = $row['pizzaName'];
-          $price = $row['pizzaPrice'];
-          echo '<div class="container" data-aos="fade-right">
-                    <img  src="img/pizza-'.$id. '.jpg" class="card-img-top border rounded-circle" alt="image for this category" min-width="249px" height="270px">
-                    <div class="card-body" data-aos="fade-left">
-                      <h5 class="card-title"><a href="viewPL.php?catid=' . $id . '">' . $cat . '</a></h5>
-                      <p class="card-text">' . $price. '... </p>
-                      <a href="viewPL.php?catid=' . $id . '" class="btn btn-primary">View All</a>
-                   
-                  </div>
-                </div>';
-        }
-      ?>
+
 
 </div>
       -->

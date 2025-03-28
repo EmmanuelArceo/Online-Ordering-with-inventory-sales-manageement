@@ -180,7 +180,7 @@
                             $zipCode = $row['zipCode'];
                             $phoneNo = $row['phoneNo'];  
                             $amount = $row['amount'];
-                          // $itemQuantity = $row['itemQuantity'];
+                            //$itemQuantity = $row['Quantity'];
                             $orderDate = $row['orderDate'];
                             $paymentMode = $row['paymentMode'];
                             if($paymentMode == 0) {

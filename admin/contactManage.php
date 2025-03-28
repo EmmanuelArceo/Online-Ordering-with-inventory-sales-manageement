@@ -25,7 +25,7 @@
                             <th>UserId</th>
                             <th>Email</th>
                             
-                            <th>Order Id</th>
+                           
                             <th>Message</th>
                             <th>datetime</th>
                             <th>Reply</th>
@@ -51,7 +51,7 @@
                                         <td>' .$userId. '</td>
                                         <td>' .$email. '</td>
                                       
-                                        <td>' .$orderId. '</td>
+                                     
                                         <td>' .$message. '</td>
                                         <td>' .$time. '</td>
                                         <td class="text-center">

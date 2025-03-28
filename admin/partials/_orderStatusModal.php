@@ -42,9 +42,9 @@
             $deliveryDetailResult = mysqli_query($conn, $deliveryDetailSql);
             $deliveryDetailRow = mysqli_fetch_assoc($deliveryDetailResult);
            $trackId = $deliveryDetailRow['id'];
-            $deliveryBoyName = $deliveryDetailRow['deliveryBoyName'];
+           $deliveryBoyName = $deliveryDetailRow['deliveryBoyName'];
            $deliveryBoyPhoneNo = $deliveryDetailRow['deliveryBoyPhoneNo'];
-            $deliveryTime = $deliveryDetailRow['deliveryTime'];
+           $deliveryTime = $deliveryDetailRow['deliveryTime'];
             if($orderStatus>0 && $orderStatus<5) { 
         ?>
            <form action="partials/_orderManage.php" method="post">

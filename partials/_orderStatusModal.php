@@ -133,7 +133,7 @@ if (!isset($conn)) {
 // Validate userId
 $userId = isset($_SESSION['userId']) ? $_SESSION['userId'] : 0;
 if (!$userId) {
-    echo "Error: User not logged in";
+  
     exit();
 }
 

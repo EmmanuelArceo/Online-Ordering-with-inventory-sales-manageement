@@ -21,17 +21,18 @@
                       <i class='bx bx-grid-alt nav__icon' ></i>
                       <span class="nav__name">Home</span>
                     </a>
-                    <a href="index.php?page=orderManage" class="nav-orderManage nav__link ">
+                   <!-- <a href="index.php?page=orderManage" class="nav-orderManage nav__link ">
                       <i class='bx bx-bar-chart-alt-2 nav__icon' ></i>
                       <span class="nav__name">Orders</span>
-                    </a>
-                    <a href="index.php?page=categoryManage" class="nav__link nav-categoryManage">
-                      <i class='bx bx-folder nav__icon' ></i>
-                      <span class="nav__name">Category List</span>
                     </a>
                     <a href="index.php?page=menuManage" class="nav__link nav-menuManage">
                       <i class='bx bx-message-square-detail nav__icon' ></i>
                       <span class="nav__name">Menu</span>
+                    </a>
+                     -->
+                     <a href="index.php?page=categoryManage" class="nav__link nav-categoryManage">
+                      <i class='bx bx-folder nav__icon' ></i>
+                      <span class="nav__name">Category List</span>
                     </a>
                     <a href="index.php?page=contactManage" class="nav__link nav-contactManage">
                       <i class="fas fa-hands-helping"></i>
